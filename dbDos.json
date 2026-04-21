@@ -1,0 +1,88 @@
+{
+  "pokemonsCard": [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "description": "A seed Pokémon that stores energy in its plant bulb and blooms as it grows.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    },
+    {
+      "id": 2,
+      "name": "Ivysaur",
+      "type": "Grass",
+      "description": "A stronger, leaf-covered Pokémon that is preparing to bloom into Venusaur.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+    },
+    {
+      "id": 3,
+      "name": "Venusaur",
+      "type": "Grass",
+      "description": "A powerful Pokémon whose flower releases a calming aroma and bright energy.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    },
+    {
+      "id": 4,
+      "name": "Charmander",
+      "type": "Fire",
+      "description": "A small fire lizard whose tail flame burns brighter when it is happy.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+    },
+    {
+      "id": 5,
+      "name": "Charmeleon",
+      "type": "Fire",
+      "description": "A fierce Pokémon that grows more aggressive and powerful as it fights.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+    },
+    {
+      "id": 6,
+      "name": "Charizard",
+      "type": "Fire",
+      "description": "A flying dragon-like Pokémon whose fiery breath can melt almost anything.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+    },
+    {
+      "id": 7,
+      "name": "Squirtle",
+      "type": "Water",
+      "description": "A playful turtle Pokémon that sprays water from its shell to protect itself.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    },
+    {
+      "id": 8,
+      "name": "Wartortle",
+      "type": "Water",
+      "description": "A loyal warrior with fluffy ears and a tail it uses like a boomerang.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+    },
+    {
+      "id": 9,
+      "name": "Blastoise",
+      "type": "Water",
+      "description": "A tank-like Pokémon with water cannons that fire powerful jets.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+    },
+    {
+      "id": 10,
+      "name": "Pikachu",
+      "type": "Electric",
+      "description": "A friendly electric mouse that stores electricity in its cheeks.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    },
+    {
+      "id": 11,
+      "name": "Eevee",
+      "type": "Normal",
+      "description": "A curious Pokémon with the ability to evolve into many different forms.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+    },
+    {
+      "id": 12,
+      "name": "Snorlax",
+      "type": "Normal",
+      "description": "A giant, sleepy Pokémon that can block roads when it naps.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
+    }
+  ]
+}
