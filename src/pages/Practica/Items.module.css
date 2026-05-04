@@ -1,0 +1,144 @@
+.itemsContainer {
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--muted);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 48px 20px;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--gap);
+  width: 100%;
+}
+
+.itemCard {
+  padding: 16px;
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius2);
+  backdrop-filter: blur(var(--blur));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.itemCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent2);
+  box-shadow: 0 0 16px rgba(111, 231, 255, 0.15);
+}
+
+.itemImageWrapper {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.itemImage {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.1));
+}
+
+.itemName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.itemGold {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: var(--gap2);
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .itemImageWrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .itemImage {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+
+  .itemImageWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .itemImage {
+    width: 52px;
+    height: 52px;
+  }
+
+  .itemName {
+    font-size: 0.8rem;
+  }
+}

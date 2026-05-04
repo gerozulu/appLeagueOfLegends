@@ -1,0 +1,311 @@
+.listPage {
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 42px;
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur));
+  box-shadow: var(--shadow2);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: var(--gap);
+  width: 100%;
+  align-items: stretch;
+}
+
+.loading {
+  color: var(--muted);
+  text-align: center;
+  padding: 48px 20px;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.searchContainer {
+  display: flex;
+  gap: var(--gap2);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 16px;
+  border-radius: var(--radius2);
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.searchInput::placeholder {
+  color: var(--muted);
+}
+
+.searchInput:focus {
+  border-color: var(--accent2);
+  box-shadow: 0 0 16px rgba(111, 231, 255, 0.2);
+}
+
+.changeDataButton {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--accent), rgba(212, 175, 55, 0.7));
+  color: var(--bg0);
+  border: none;
+  border-radius: var(--radius2);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+
+.changeDataButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);
+}
+
+.changeDataButton:active {
+  transform: translateY(0);
+}
+
+.buildContainer {
+  margin-top: 12px;
+}
+
+.buildTitle {
+  text-align: center;
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.buildIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 4px 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 55, 0.4) transparent;
+}
+
+.buildIcons::-webkit-scrollbar {
+  height: 4px;
+}
+
+.buildIcons::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.buildIcons::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4);
+  border-radius: 2px;
+}
+
+.buildGrid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.itemIconWrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border2);
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.itemIconWrap:hover {
+  transform: scale(1.06);
+  border-color: var(--accent2);
+  box-shadow: 0 0 12px rgba(111, 231, 255, 0.25);
+}
+
+.itemIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.itemIconFallback {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sideBySide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blockTitle {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.runesRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.runeStyleIcon {
+  width: 36px;
+  height: 36px;
+  opacity: 0.95;
+  transition: all 0.2s ease;
+}
+
+.runeStyleIcon:hover {
+  transform: scale(1.08);
+}
+
+.runeKeystone {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border2);
+  padding: 4px;
+  transition: all 0.2s ease;
+}
+
+.runeKeystone:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 12px rgba(111, 231, 255, 0.15);
+}
+
+.runeSmallCol {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.runeSmall {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border2);
+  padding: 2px;
+  transition: all 0.2s ease;
+}
+
+.runeSmall:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(111, 231, 255, 0.15);
+}
+
+.runesRowSecondary {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.runeStyleIconSmall {
+  width: 28px;
+  height: 28px;
+  opacity: 0.85;
+  transition: all 0.2s ease;
+}
+
+.runeStyleIconSmall:hover {
+  transform: scale(1.08);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1199px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 767px) {
+  .section {
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--gap2);
+  }
+
+  .searchContainer {
+    flex-direction: column;
+  }
+
+  .searchInput {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .changeDataButton {
+    width: 100%;
+  }
+
+  .sideBySide {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

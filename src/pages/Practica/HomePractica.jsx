@@ -1,4 +1,4 @@
-import PokemonList from './PokemonList';
+import ChampionList from './ChampionList';
 import InfoCard from '../../components/infoCard';
 import styles from './HomePractica.module.css';
 import Items from './Items';
@@ -6,25 +6,28 @@ import Items from './Items';
 const HomePractica = () => {
   return (
     <div className={styles.page}>
-      <h1 className={styles.title}>🏠 Mi Página de Práctica</h1>
+      <h1 className={styles.title}>🎮 Generador de Equipos LoL</h1>
       <p className={styles.description}>
-        Bienvenido a tu espacio de práctica. Aquí verás todos los Pokémon y también una selección especial de los 5 más buscados.
+        Randomiza equipos completos de League of Legends con roles reales. Juega partidas más dinámicas y divertidas con tus amigos.
       </p>
       <hr className={styles.divider} />
 
       <div className={styles.introCard}>
         <InfoCard
-          icon="📊"  
-          title="Top 5 del momento"
-          description="Estos son los Pokémon más consultados esta semana"
+          icon="⚔️"  
+          title="Combina Campeones e Ítems"
+          description="Genera equipos balanceados por rol y descubre builds aleatorias"
         />
-      <h2>y sus items</h2>
-        <Items />
       </div>
 
       <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>🔥 Los Pokémon más buscados</h2>
-        <PokemonList />
+        <h2 className={styles.sectionTitle}>📦 Ítems Disponibles</h2>
+        <Items />
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>⚡ Los Campeones de LoL</h2>
+        <ChampionList />
         
       </section>
     </div>
